@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Performance &amp; Academic Analytics</title>
+<link rel="stylesheet" href="/style.css"></head>
+<body>
+<section id="login" class="login-wrap">
+  <div class="card login-card">
+    <div class="logo">SP</div>
+    <h1>Student Performance &amp; Academic Analytics</h1>
+    <p class="muted">Sign in to continue</p>
+    <label>Username</label><input id="lu" autocomplete="username">
+    <label>Password</label><input id="lp" type="password" autocomplete="current-password">
+    <div id="lerr" class="error"></div>
+    <button id="lbtn" class="btn">Sign in</button>
+  </div>
+</section>
+<div id="app" hidden>
+  <header class="top"><div class="brand"><span class="logo sm">SP</span> Academic Analytics</div>
+    <nav id="nav"></nav><div class="who"><span id="who"></span><button class="btn ghost" id="out">Logout</button></div></header>
+  <main id="view"></main>
+</div>
+<script src="/chart.umd.js"></script><script src="/app.js"></script>
+</body></html>
